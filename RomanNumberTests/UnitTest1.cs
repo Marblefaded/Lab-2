@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Laba;
+using Laba_2;
 
 namespace Tests
 {
