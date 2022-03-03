@@ -16,21 +16,21 @@ namespace Lab_2
             _value = this.n;
             if (n == 0) throw new RomanNumberException();
         }
-        public static RomanNumber Add(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator +(RomanNumber? n1, RomanNumber? n2)
         {
             _value = (ushort)(n1.n + n2.n);
 
             RomanNumber arrayed = new RomanNumber(_value);
             return arrayed;
         }
-        public static RomanNumber Sub(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator -(RomanNumber? n1, RomanNumber? n2)
         {
             _value = (ushort)(n1.n - n2.n);
 
             RomanNumber arrayed = new RomanNumber(_value);
             return arrayed;
         }
-        public static RomanNumber Mul(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator *(RomanNumber? n1, RomanNumber? n2)
         {
 
             _value = (ushort)(n1.n * n2.n);
@@ -38,7 +38,7 @@ namespace Lab_2
             RomanNumber arrayed = new RomanNumber(_value);
             return arrayed;
         }
-        public static RomanNumber Div(RomanNumber? n1, RomanNumber? n2)
+        public static RomanNumber operator /(RomanNumber? n1, RomanNumber? n2)
         {
 
             _value = (ushort)(n1.n / n2.n);
